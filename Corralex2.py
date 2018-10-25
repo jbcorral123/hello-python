@@ -1,10 +1,14 @@
-if x>= 220:
-    print(x, "Super Typhoon")
-elif x=<220 or x==180:
-    print(x, "Typhoon")
-elif x=<,117 or x==89:
-    print(x, "Several Tropical Typhoon")
-elif x=<88 or x==62:
-    print(x, "Tropical Storm")
-else x=<61:
-    print(x, "Tropical Depression")
+import sys
+gaga=sys.argv[1]
+gaga=float(gaga)
+
+if gaga>=220.0:
+    print("Super Typhoon")
+elif gaga>=118.0:
+    print("Typhoon")
+elif gaga>=89.0:
+    print("Severe Tropical Storm")
+elif gaga>=62.0:
+    print("Tropical Storm")
+elif gaga<=61.0:
+    print("Tropical Depression")

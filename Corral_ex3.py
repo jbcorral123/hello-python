@@ -1,8 +1,12 @@
-r=1
-total=
+Input= input ("Enter a comma separated list of numbers: ")
+print (type(Input))
+user_input = Input.split(",")
+print (type(user_input))
 
-while r<55:
-    if r&1:
-        print(r, end=" ")
-    r+=1
-    print("sum= ",total)
+
+index=0
+sum=0  
+for x in user_input:
+    sum += float (user_input[index])**2
+    index+=1
+    print ("Sum of squares:" , sum )
